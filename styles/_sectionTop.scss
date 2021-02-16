@@ -1,0 +1,109 @@
+.section-top {
+    height: 20em;
+    width: 100%;
+    display: flex;
+
+    &_text {
+        width: 100%;
+        height: 100%;
+
+        & h1 {
+            font-size: $texth1;
+            color: $primaryCol1;
+            line-height: 1;
+            margin: 0;  
+            width: 70%;
+
+            @media (max-width:850px) {
+                width: 100%;
+            }
+        }
+
+        & p {
+            font-size: $textBody;
+            color: $darkMagenta;
+            line-height: 1.5;
+            width: 80%;
+
+            @media (max-width:850px) {
+                width: 100%;
+                
+            }
+        }
+
+        @media (max-width:850px) {
+            text-align: center;
+            margin-bottom: 4em;
+        }
+    }
+    
+    &_stars {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .star-review-box {
+            background: $lightMagenta;
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            width: 80%;
+
+            &_stars {
+                padding: 0 29px;
+
+                img {
+                    padding: 0 1px;
+                }
+            }
+
+            &_text {
+                color: $primaryCol1;
+                font-size: 1.3em;
+                font-weight: 800;
+
+                p {
+                    @media (max-width:850px) {
+                        margin-bottom: 0;
+                    }
+
+                }
+            }
+
+            &--2 {
+                align-self: center;
+            }
+
+            &--3 {
+                align-self: flex-end;
+            }
+
+            @media (max-width:1058px) {
+                width: 100%;
+                
+                &--2 {
+                    align-self: flex-start;
+                }
+                &--3 {
+                    align-self: flex-start;
+                }
+            }
+
+            @media (max-width:850px) {
+                flex-direction: column;
+            }
+
+        }
+        @media (max-width:850px) {
+            margin-top: 7em;
+        }
+    }
+
+    @media (max-width:850px) {
+        flex-direction: column;
+    }
+
+}
